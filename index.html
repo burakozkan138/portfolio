@@ -5,33 +5,35 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-  <title>WowFolio - A Simple & Clean Portfolio Template For Developers</title>
-  <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
+  <title>Burak Özkan - Backend Developer</title>
+  <meta name="description" content="Burak Özkan - Junior Backend Developer with a passion for building reliable and efficient web applications." />
+  <link rel="icon" href="./assets/dalle-logo.webp" />
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header__logo-container">
       <div class="main-header__logo-img-cont">
-        <img
-          src="https://d33wubrfki0l68.cloudfront.net/32c48e23e828c42a99a37db81e2a91d7c8eed4de/d134a/assets/png/ram-maheshwari.png"
-          alt="logo Image" class="main-header__logo-img" />
+        <img src="./assets/dalle-logo.webp" alt="logo Image" class="main-header__logo-img" />
       </div>
-      <h4 class="main-header__logo-text">John Anderson</h4>
+      <h4 class="main-header__logo-text">
+        <a href="#home">Burak Özkan</a>
+      </h4>
     </div>
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
-        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
-        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link"><a href="#home"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="#about"> About </a></li>
         <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> Projects </a>
+          <a href="#projects"> Projects </a>
         </li>
-        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+        <li class="main-header__navigation-link"><a href="#contact" href=""> Contact </a></li>
       </ul>
     </nav>
     <div class="main-header__sm-scr-nav-btn">
@@ -44,42 +46,65 @@
       </div>
       <ul class="main-header__sm-menu-links">
         <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+          <a href="#home" class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home">Home</a>
         </li>
 
         <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+          <a href="#about" class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
         </li>
         <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+          <a href="#projects" class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
         </li>
         <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+          <a href="#contact" class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
         </li>
       </ul>
     </div>
     <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
   </header>
-
   <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
-  <div class="themeClrSelector">
+  <!-- <div class="themeClrSelector">
     <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
-    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
-      class="themeClrSelector__img" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png" class="themeClrSelector__img" />
+  </div> -->
+  <!---->
+  <!-- follow me -->
+  <div class="follow-me">
+    <div class="follow-me__text">follow me</div>
+    <div class="follow-me__line"></div>
+    <ul class="follow-me__list">
+      <li class="follow-me__list-item">
+        <a class="follow-me__list-link" href="https://github.com/burakozkan138" target="_blank">
+          <i class="devicon-github-original follow__link-icon"></i>
+        </a>
+      </li>
+
+      <li class="follow-me__list-item">
+        <a class="follow-me__list-link" href="https://www.linkedin.com/in/burakozkan138/" target="_blank">
+          <i class="devicon-linkedin-plain follow__link-icon"></i>
+        </a>
+      </li>
+
+      <li class="follow-me__list-item">
+        <a class="follow-me__list-link" href="mailto:burakozkan138@gmail.com" target="_blank">
+          <i class="devicon-google-plain follow__link-icon"></i>
+        </a>
+      </li>
+    </ul>
   </div>
   <!---->
-
-  <section id="home-hero" class="home-hero">
+  <section id="home" class="home-hero">
     <div class="home-hero__content">
       <div class="home-hero__info">
         <h1 class="heading-primary home-hero__heading-primary">
           <span class="heading-primary__sm"> Hello 👋</span>
           <span class="heading-primary__main">
-            I'm John Anderson! A Web Developer Building Awesome Webapps And Websites That Powers The Internet
+            I'm Burak, a Backend Developer Crafting Powerful APIs and Scalable Solutions That Drive the Web Forward.
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
-        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+        <a href="#about" class="btn btn-theme home-hero__btn-theme" style="text-decoration: none;">About</a>
+        <a href="#contact" class="btn btn-inv home-hero__btn-theme" style="text-decoration: none;">Contact</a>
+
       </div>
     </div>
   </section>
@@ -88,7 +113,8 @@
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> About 🦄</span>
         <span class="heading-secondary__main">
-          Here you will find more information about me, what I do, and list of my current skills in programming
+          Here you will find more information about me, what I do, and a list of my current skills in programming
+        </span>
       </h2>
       <div class="main-section__content">
         <div class="about__info">
@@ -98,56 +124,98 @@
             </h3>
             <p class="text-primary about__text-primary">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                I am a passionate software developer who enjoys learning new technologies and solving complex problems. I started my programming
+                journey
+                at a young age and have continuously honed my skills through both personal projects and professional experience. My goal is to keep
+                improving and contribute to meaningful projects.
               </span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                I have experience working with backend technologies, primarily using Expressjs, .NET Core. I'm also familiar with
+                frontend frameworks like React, and I focus on writing clean, maintainable code using SOLID principles.
               </span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                My current focus is backend development, and I aim to further improve my skills in areas like performance optimization, security, and
+                cloud computing. I also love to collaborate with others and contribute to open-source projects.
               </span>
             </p>
-            <button class="btn btn-theme about__btn-theme">Projects</button>
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
               My Skills
             </h3>
             <ul class="about__skills">
-              <li class="about__skill">html</li>
-              <li class="about__skill">css</li>
-              <li class="about__skill">javascript</li>
-              <li class="about__skill">react</li>
-              <li class="about__skill">node</li>
-              <li class="about__skill">git</li>
-              <li class="about__skill">vscode</li>
-              <li class="about__skill">linux</li>
-              <li class="about__skill">react</li>
-              <li class="about__skill">node</li>
-              <li class="about__skill">git</li>
-              <li class="about__skill">vscode</li>
-              <li class="about__skill">linux</li>
-              <li class="about__skill">javascript</li>
-              <li class="about__skill">react</li>
+              <li class="about__skill-item">
+                <i class="devicon-html5-plain about__skill-icon" style="color: #E44D26;"></i>
+                <span class="about__skill-text">HTML</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-css3-plain about__skill-icon" style="color: #1572B6;"></i>
+                <span class="about__skill-text">CSS</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-javascript-plain about__skill-icon" style="color: #F7DF1E;"></i>
+                <span class="about__skill-text">JavaScript</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-react-original about__skill-icon" style="color: #61DAFB;"></i>
+                <span class="about__skill-text">React</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-nodejs-plain about__skill-icon" style="color: #339933;"></i>
+                <span class="about__skill-text">Node.js</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-git-plain about__skill-icon" style="color: #F05032;"></i>
+                <span class="about__skill-text">Git</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-linux-plain about__skill-icon" style="color: #FCC624;"></i>
+                <span class="about__skill-text">Linux</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-vscode-plain about__skill-icon" style="color: #0078D4;"></i>
+                <span class="about__skill-text">VSCode</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-mongodb-plain about__skill-icon" style="color: #47A248;"></i>
+                <span class="about__skill-text">MongoDB</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-docker-plain about__skill-icon" style="color: #2496ED;"></i>
+                <span class="about__skill-text">Docker</span>
+              </li>
+              <li class="about__skill-item">
+                <i class="devicon-postgresql-plain about__skill-icon" style="color: #336791;"></i>
+                <span class="about__skill-text">PostgreSQL</span>
+              </li>
+              <!-- Go -->
+              <li class="about__skill-item">
+                <i class="devicon-go-plain about__skill-icon" style="color: #00ADD8;"></i>
+                <span class="about__skill-text">Go</span>
+              </li>
+              <!-- .NET -->
+              <li class="about__skill-item">
+                <i class="devicon-dotnetcore-plain about__skill-icon" style="color: #512BD4;"></i>
+                <span class="about__skill-text">.NET Core</span>
+              </li>
+              <!-- C# -->
+              <li class="about__skill-item">
+                <i class="devicon-csharp-plain about__skill-icon" style="color: #239120;"></i>
+                <span class="about__skill-text">C#</span>
+              </li>
+              <!-- Java -->
+              <li class="about__skill-item">
+                <i class="devicon-java-plain about__skill-icon" style="color: #F8981D;"></i>
+                <span class="about__skill-text">Java</span>
+              </li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
   </section>
-  <section class="skills-showcase">
+  <!-- <section class="skills-showcase">
     <ul class="skills-showcase__list">
       <li class="skills-showcase__list-item">
         <i class="devicon-html5-plain"></i>
@@ -178,155 +246,41 @@
         <i class="devicon-python-plain"></i>
       </li>
     </ul>
-  </section>
+  </section> -->
   <section id="projects" class="projects main-section">
     <div class="main-container">
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> Projects 🛠️</span>
         <span class="heading-secondary__main">
-          Here you will find some of the personal and clients projects that I created with the project details
+          Here you will find some of the personal and client projects that I created with the project details
         </span>
       </h2>
       <div class="main-section__content">
         <div class="projects__list">
+          <!-- Project 1 -->
           <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 1 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
+            <div class="projects__list-item-content">
+              <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              <div class="projects__list-item-btns">
+                <button class="btn btn-theme projects__btn-theme">
+                  <a style="color:white; text-decoration: none;" href="https://qclient.burakhub.com" target="_blank">Live Link</a>
+                </button>
+                <button class="btn btn-inv projects__btn-inv">
+                  <a style="color:black; text-decoration: none;" href="https://github.com/burakozkan138/questionanswerapi" target="_blank">Code
+                    Link</a>
+                </button>
+              </div>
             </div>
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Question Answer API
               </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  A RESTful API built using Node.js for managing question-answer pairs. It provides
+                  endpoints to create, update, and delete questions, along with a simple search functionality.
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-          </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-          </div>
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 3 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-          </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 4 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
             </div>
           </div>
         </div>
@@ -354,10 +308,10 @@
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact__form-field-input"></textarea>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10" class="contact__form-field-input"></textarea>
             </div>
-            <button type="submit" class="contact__form-submit">Submit</button>
+            <!--  <button type="submit" class="contact__form-submit">Submit</button> -->
+            <button type="submit" class="btn btn-theme contact__form-submit" style="background-color: red;">NOT Working now...</button>
           </form>
           <div class="contact__form-visual"></div>
         </div>
@@ -365,7 +319,7 @@
     </div>
   </section>
   <footer class="main-footer">
-    <div class="main-footer__upper">
+    <!-- <div class="main-footer__upper">
       <div class="main-container">
         <ul class="main-footer__links">
           <li class="main-footer__link">
@@ -384,9 +338,8 @@
         <div class="main-footer__mid-line"></div>
         <div class="main-footer__socials">
           <a href="#" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
-              alt="" class="main-footer__social-link-icon" />
+            <img src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt=""
+              class="main-footer__social-link-icon" />
           </a>
           <a href="#" class="main-footer__social-link">
             <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
@@ -395,16 +348,15 @@
             <img src="./assets/icons8-twitter-50.png" alt="" class="main-footer__social-link-icon" />
           </a>
           <a href="#" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-              alt="" class="main-footer__social-link-icon" />
+            <img src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png" alt=""
+              class="main-footer__social-link-icon" />
           </a>
           <a href="#" class="main-footer__social-link">
             <img src="./assets/icons8-pinterest-64.png" alt="" class="main-footer__social-link-icon" />
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="main-footer__bottom">
       <div class="main-container">
         <p class="main-footer__bottom-txt">
